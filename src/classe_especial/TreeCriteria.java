@@ -3,7 +3,7 @@ package src.classe_especial;
 import src.classes.Node;
 import src.classes.Tree;
 
-// Questão 12
+// Questão 1
 public class TreeCriteria extends Tree {
 
     // Pode receber CriteriaOne, CriteriaTwo ou Neuro

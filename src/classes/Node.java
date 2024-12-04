@@ -1,12 +1,11 @@
 package src.classes;
 
-// Questão 1
 public class Node {
 
     private int valor;
     private Node esquerda;
     private Node direita;
-    // Questão 13
+    // Questão 2
     private int peso;
 
     public Node(int valor) {

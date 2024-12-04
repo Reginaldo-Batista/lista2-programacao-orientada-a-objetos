@@ -2,7 +2,7 @@ package src.classe_especial;
 
 import src.classes.Node;
 
-// Questão 13
+// Questão 2
 public class Neuro extends Criteria {
 
     @Override
