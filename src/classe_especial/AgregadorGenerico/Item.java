@@ -12,6 +12,10 @@ public abstract class Item {
     this.setQuantidade(quantidade);
   }
 
+  public double getValorTotal() {
+    return this.getPreco() * this.getQuantidade();
+}
+
   public String getNome() {
     return nome;
   }
@@ -25,6 +29,9 @@ public abstract class Item {
   }
 
   public void setPreco(double preco) {
+    if (preco < 0) {
+      throw new IllegalArgumentException("Preço não pode ser negativo");
+    }
     this.preco = preco;
   }
 
@@ -33,6 +40,9 @@ public abstract class Item {
   }
 
   public void setQuantidade(int quantidade) {
+    if (quantidade < 0) {
+      throw new IllegalArgumentException("Quantidade não pode ser negativa");
+    }
     this.quantidade = quantidade;
   }
 
