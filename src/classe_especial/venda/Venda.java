@@ -1,7 +1,13 @@
 package src.classe_especial.venda;
 
-import src.classe_especial.AgregadorGenerico.Agregador;
+import src.classe_especial.AgregadorGenerico.Agregado;
 
-public class Venda extends Agregador<ItemVenda> {
+// Questão 4
+public class Venda extends Agregado<ItemVenda> {
+
+    /*
+     * Aqui pode implementar métodos específicos para a classe Venda
+     * Mas estando vazio desta forma já funciona adequadamente
+     */
 
 }

@@ -3,7 +3,8 @@ package src.classe_especial.AgregadorGenerico;
 import java.util.LinkedList;
 import java.util.List;
 
-public abstract class Agregador<T extends Item> {
+// Questão 4
+public abstract class Agregado<T extends Item> {
 
   private List<T> itens = new LinkedList<T>();
 

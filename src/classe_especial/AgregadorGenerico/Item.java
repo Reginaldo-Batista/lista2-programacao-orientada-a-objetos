@@ -1,5 +1,6 @@
 package src.classe_especial.AgregadorGenerico;
 
+// Questão 4
 public abstract class Item {
 
   private String nome;
