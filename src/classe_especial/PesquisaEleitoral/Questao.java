@@ -7,30 +7,12 @@ public class Questao {
 
     private String enunciado;
     private List<Alternativa> alternativas = new ArrayList<>();
-    private Alternativa alternativaEscolhida;
+    private Enquete enquete;
 
-    public Questao(String enunciado, List<Alternativa> alternativas) {
+    public Questao(Enquete enquete, String enunciado, List<Alternativa> alternativas) {
         this.enunciado = enunciado;
         this.alternativas = alternativas;
-    }
-
-    public void adicionarAlternativa(Alternativa alternativa) {
-        alternativas.add(alternativa);
-    }
-
-    public void removerAlternativa(Alternativa alternativa) {
-        alternativas.remove(alternativa);
-    }
-
-    public void setAlternativaEscolhida(Alternativa alternativa) {
-        alternativaEscolhida = alternativa;
-    }
-
-    public void confirmarResposta() {
-        if (alternativaEscolhida == null) {
-            throw new RuntimeException("Alternativa não escolhida");
-        }
-        alternativaEscolhida.votar();
+        this.enquete = enquete;
     }
 
     public String getEnunciado() {
@@ -41,7 +23,8 @@ public class Questao {
         return alternativas;
     }
 
-    public Alternativa getAlternativaEscolhida() {
-        return alternativaEscolhida;
+    public Enquete getEnquete() {
+        return enquete;
     }
+
 }
