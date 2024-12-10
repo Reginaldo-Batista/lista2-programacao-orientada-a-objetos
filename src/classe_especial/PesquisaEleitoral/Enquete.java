@@ -19,6 +19,12 @@ public class Enquete {
         return this;
     }
 
+    public Questao adicionarQuestao(String enunciado) {
+        Questao questao = new Questao(this, enunciado);
+        questoes.add(questao);
+        return questao;
+    }
+
     public void removerQuestao(Questao questao) {
         questoes.remove(questao);
     }

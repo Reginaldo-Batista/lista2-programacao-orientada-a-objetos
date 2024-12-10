@@ -9,12 +9,14 @@ public class Questao {
     private List<Alternativa> alternativas = new ArrayList<>();
     private Enquete enquete;
 
-    public Questao(String enunciado) {
+    public Questao(Enquete enquete, String enunciado) {
         this.enunciado = enunciado;
+        this.enquete = enquete;
     }
 
-    public Questao addAlternativa(Alternativa alternativa) {
-        alternativas.add(alternativa);
+    public Questao addAlternativa(String textoAlternativa) {
+        Alternativa novaAlternativa = new Alternativa(this, textoAlternativa);
+        alternativas.add(novaAlternativa);
         return this;
     }
 

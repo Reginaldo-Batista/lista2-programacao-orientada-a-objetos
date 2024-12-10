@@ -2,7 +2,7 @@ package src.classe_especial.PesquisaEleitoral;
 
 import java.util.List;
 
-public class ContabilizarRespostas {
+public class Contabilizador {
 
     public static List<Participante> participantes = Participante.getParticipantes();
     public static List<Enquete> enquetes = Enquete.getEnquetes();
