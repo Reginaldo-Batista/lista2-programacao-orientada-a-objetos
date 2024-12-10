@@ -14,15 +14,15 @@ public class Enquete {
         Enquete.enquetes.add(this);
     }
 
-    public Enquete adicionarQuestao(Questao questao) {
-        questoes.add(questao);
-        return this;
-    }
-
     public Questao adicionarQuestao(String enunciado) {
         Questao questao = new Questao(this, enunciado);
         questoes.add(questao);
         return questao;
+    }
+
+    public Enquete adicionarQuestao(Questao questao) {
+        questoes.add(questao);
+        return this;
     }
 
     public void removerQuestao(Questao questao) {

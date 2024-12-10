@@ -9,8 +9,8 @@ public class Participante {
 
     private static List<Participante> participantes = new ArrayList<>();
     private static Map<String, Participante> participantesPorCpf = new HashMap<>();
+    
     private String cpf;
-    private List<Enquete> enquentesParaResponder = Enquete.getEnquetes();
     private List<Resposta> respostas = new ArrayList<>();
 
     public Participante(String cpf) {
@@ -45,32 +45,5 @@ public class Participante {
     public List<Resposta> getRespostas() {
         return respostas;
     }
-
-    public List<Enquete> getEnquentesParaResponder() {
-        return enquentesParaResponder;
-    }
-
-    public void adicionarEnquete(Enquete enquete) {
-        enquentesParaResponder.add(enquete);
-    }
-
-    public void removerEnquete(Enquete enquete) {
-        enquentesParaResponder.remove(enquete);
-    }
-
-    // public void responderEnquete(Enquete enquete, Questao questao, Alternativa
-    // alternativa) {
-    // if (!enquentesParaResponder.contains(enquete)) {
-    // throw new RuntimeException("Enquete não disponível para resposta");
-    // }
-    // if (!enquete.getQuestoes().contains(questao)) {
-    // throw new RuntimeException("Questão não disponível para resposta");
-    // }
-    // if (!questao.getAlternativas().contains(alternativa)) {
-    // throw new RuntimeException("Alternativa não disponível para resposta");
-    // }
-    // Resposta resposta = new Resposta(questao, alternativa);
-    // respostas.add(resposta);
-    // }
 
 }

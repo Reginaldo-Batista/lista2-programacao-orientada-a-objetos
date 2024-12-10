@@ -5,9 +5,9 @@ import java.util.List;
 
 public class Questao {
 
+    private Enquete enquete;
     private String enunciado;
     private List<Alternativa> alternativas = new ArrayList<>();
-    private Enquete enquete;
 
     public Questao(Enquete enquete, String enunciado) {
         this.enunciado = enunciado;
@@ -20,12 +20,12 @@ public class Questao {
         return this;
     }
 
-    public String getEnunciado() {
-        return enunciado;
-    }
-
     public List<Alternativa> getAlternativas() {
         return alternativas;
+    }
+
+    public String getEnunciado() {
+        return enunciado;
     }
 
     public Enquete getEnquete() {
