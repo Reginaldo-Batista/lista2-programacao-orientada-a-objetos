@@ -10,7 +10,7 @@ public class Participante {
     private static List<Participante> participantes = new ArrayList<>();
     private static Map<String, Participante> participantesPorCpf = new HashMap<>();
     private String cpf;
-    private List<Enquete> enquentesParaResponder = new ArrayList<>();
+    private List<Enquete> enquentesParaResponder = Enquete.getEnquetes();
     private List<Resposta> respostas = new ArrayList<>();
 
     public Participante(String cpf) {

@@ -9,14 +9,14 @@ public class Enquete {
     private String titulo;
     private List<Questao> questoes = new ArrayList<>();
 
-    public Enquete(String titulo, List<Questao> questoes) {
+    public Enquete(String titulo) {
         this.titulo = titulo;
-        this.questoes = questoes;
         Enquete.enquetes.add(this);
     }
 
-    public void adicionarQuestao(Questao questao) {
+    public Enquete adicionarQuestao(Questao questao) {
         questoes.add(questao);
+        return this;
     }
 
     public void removerQuestao(Questao questao) {

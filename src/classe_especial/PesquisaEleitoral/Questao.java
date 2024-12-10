@@ -9,10 +9,13 @@ public class Questao {
     private List<Alternativa> alternativas = new ArrayList<>();
     private Enquete enquete;
 
-    public Questao(Enquete enquete, String enunciado, List<Alternativa> alternativas) {
+    public Questao(String enunciado) {
         this.enunciado = enunciado;
-        this.alternativas = alternativas;
-        this.enquete = enquete;
+    }
+
+    public Questao addAlternativa(Alternativa alternativa) {
+        alternativas.add(alternativa);
+        return this;
     }
 
     public String getEnunciado() {
