@@ -14,7 +14,7 @@ public class Enquete {
         Enquete.enquetes.add(this);
     }
 
-    public Questao adicionarQuestao(String enunciado) {
+    public Questao addQuestao(String enunciado) {
         Questao questao = new Questao(this, enunciado);
         questoes.add(questao);
         return questao;
