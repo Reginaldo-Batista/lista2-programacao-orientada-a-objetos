@@ -1,12 +1,11 @@
 package src.classe_especial.ListaCircular;
 
-public class Head<T> {
+public class Tail<T> {
 
-
-    Bloco<T> primeiro;
     Bloco<T> ultimo;
+    Bloco<T> primeiro;
 
-    public Head() {
+    public Tail() {
         primeiro = null;
         ultimo = null;
     }
